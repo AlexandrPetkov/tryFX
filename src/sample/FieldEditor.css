@@ -1,0 +1,71 @@
+.root {
+    -fx-hgap: 9;
+    -fx-min-height: 50;
+    -fx-min-width: 720;
+    -fx-pref-height: 50;
+    -fx-pref-width: 720;
+    -fx-padding: 10 10 0 10;
+    -fx-alignment: TOP_LEFT;
+}
+
+.box {
+    -fx-pref-height: 20;
+    -fx-pref-width: 100;
+    -fx-min-height: 20;
+    -fx-min-width: 100;
+    -fx-padding: -4 0 0 0;
+}
+
+.nameField {
+    -fx-pref-height: 20;
+    -fx-min-height: 20;
+}
+
+.descriptionField {
+    -fx-pref-height: 20;
+    -fx-min-height: 20;
+}
+
+/*--- next ---*/
+.close-button {
+    -fx-border-color: transparent;
+    -fx-min-width: 10;
+    -fx-pref-width: 10;
+    -fx-pref-height: 10;
+    -fx-min-height: 10;
+
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-size: stretch;
+    -fx-background-color: transparent;
+
+    -fx-background-image: url("/resources/images/qe/cross.png");
+}
+
+.close-button:hover {
+    -fx-background-image: url("/resources/images/qe/cross_hover.png");
+}
+
+/*--- next ---*/
+.drag-button {
+    -fx-pref-width: 15;
+    -fx-pref-height: 15;
+
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-size: stretch;
+    -fx-background-color: transparent;
+
+    -fx-background-image: url("/ish/oncourse/javafx/icon/dashboard/filter.png");
+}
+
+.drag-button:hover {
+    -fx-background-image: url("/ish/oncourse/javafx/icon/dashboard/filter_hover.png");
+}
+
+/*--- next ---*/
+.label-light_gray {
+    -fx-font-size: 10px;
+    -fx-text-fill: #acacac;
+    -fx-font-family: 'Source Sans Pro Regular';
+}

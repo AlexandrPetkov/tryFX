@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.text.Text?>
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.RowConstraints?>
+<fx:root type="GridPane" gridLinesVisible="false" stylesheets="@FieldEditor.css"
+         styleClass="root"
+         xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml">
+    <children>
+        <Button fx:id="dragButton" GridPane.columnIndex="0" GridPane.rowIndex="0" styleClass="drag-button"/>
+        <Text fx:id="header" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+        <ChoiceBox fx:id="state" value="Mandatory" GridPane.columnIndex="2" GridPane.rowIndex="0" styleClass="box">
+            <items>
+                <FXCollections fx:factory="observableArrayList">
+                    <String fx:value="Mandatory" />
+                    <String fx:value="Optional" />
+                </FXCollections>
+            </items>
+        </ChoiceBox>
+        <TextField fx:id="nameField" GridPane.columnIndex="3" GridPane.rowIndex="0" styleClass="nameField"/>
+        <TextField fx:id="descriptionField" GridPane.columnIndex="4" GridPane.rowIndex="0" styleClass="descriptionField"/>
+        <Button fx:id="closeButton" GridPane.columnIndex="5" GridPane.rowIndex="0" styleClass="close-button"/>
+        <Label fx:id="nameLabel" text="Label" GridPane.columnIndex="3" GridPane.rowIndex="1" styleClass="label-light_gray" />
+        <Label fx:id="descriptionLabel" text="Help text" GridPane.columnIndex="4" GridPane.rowIndex="1" styleClass="label-light_gray"/>
+     </children>
+
+    <columnConstraints>
+        <ColumnConstraints prefWidth="15" halignment="CENTER"/>
+        <ColumnConstraints prefWidth="85" halignment="LEFT"/>
+        <ColumnConstraints prefWidth="120" halignment="LEFT"/>
+        <ColumnConstraints prefWidth="115" halignment="LEFT"/>
+        <ColumnConstraints prefWidth="300" halignment="LEFT"/>
+        <ColumnConstraints prefWidth="25" halignment="CENTER"/>
+    </columnConstraints>
+
+    <rowConstraints>
+        <RowConstraints prefHeight="20" valignment="CENTER"/>
+        <RowConstraints prefHeight="20" valignment="TOP"/>
+    </rowConstraints>
+</fx:root>
